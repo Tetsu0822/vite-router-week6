@@ -1,0 +1,51 @@
+// .cart-card 繼承 bootstrap 的 .card 樣式
+.cart {
+    &-card {
+        border: 1px solid $secondary-100;
+        border-radius: 16px;
+    }
+}
+
+/* 彈窗外殼 */
+.my-cart-toast-popup {
+    border: 1px solid #E3879F !important;
+    border-radius: 0 !important;
+    padding: 16px 24px !important;
+}
+
+/* 移除 SWAL 預設給 htmlContainer 的內距，方便我們自訂對齊 */
+.my-cart-html-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 內容容器：橫向排列 */
+.cart-toast-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toast-text {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* 連結樣式 */
+.toast-link {
+    color: #493B3F;
+    text-decoration: none;
+    border-bottom: 1px solid #493B3F;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 40px;
+    line-height: 1.5;
+    padding: 0 0 8px 0;
+    white-space: nowrap;
+}
+
+.toast-link:hover {
+    opacity: 0.6;
+}

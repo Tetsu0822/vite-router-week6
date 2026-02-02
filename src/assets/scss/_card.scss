@@ -1,0 +1,33 @@
+.product {
+    &-card {
+        border-radius: 16px;
+    }
+    &-image {
+        background-color: $gray-100;
+        border-radius: 16px;
+        padding: 16px;
+        cursor: pointer;
+        img {
+            border-radius: 16px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    &-title {
+        color: $gray-600;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0px;
+        line-height: 150%;
+    }
+    &-cart-btn {
+        padding: 12px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        &:hover {
+            color: $primary-700;
+            transform: scale(1.05);
+        }
+    }
+}
